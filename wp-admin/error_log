@@ -1,0 +1,48 @@
+[01-Mar-2023 12:43:10 UTC] ERROR PostmanWpMail: Exception code=0 message='ssl://smtp.sendgrid.net' appears to be a DNS hostname but cannot match against hostname schema for TLD 'net', 'ssl://smtp.sendgrid.net' does not appear to be a valid URI hostname, 'ssl://smtp.sendgrid.net' does not appear to be a valid local network name
+[01-Mar-2023 12:43:21 UTC] PHP Fatal error:  Uncaught Error: Object of class PostmanEmailAddress could not be converted to string in /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php:171
+Stack trace:
+#0 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php(171): implode()
+#1 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/DB/TableManager.php(401): EmailLog\Util\stringify()
+#2 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/EmailLogger.php(195): EmailLog\Core\DB\TableManager->fetch_log_id_by_data()
+#3 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/EmailLogger.php(141): EmailLog\Core\EmailLogger->mark_email_log_as_failed()
+#4 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(308): EmailLog\Core\EmailLogger->on_email_failed()
+#5 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /home/ocpze0h9leg7/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMail.php(294): do_action()
+#8 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMail.php(60): PostmanWpMail->sendMessage()
+#9 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMailBinder.php(121): PostmanWpMail->send()
+#10 /home/ocpze0h9leg7/public_html/wp-content/plugins/wp-mail-smtp/src/Admin/Pages/TestTab.php(345): wp_mail()
+#11 /home/ocpze0h9leg7/public_html/wp-content/plugins/wp-mail-smtp/src/Admin/ParentPageAbstract.php(265): WPMailSMTP\Admin\Pages\TestTab->process_post()
+#12 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(308): WPMailSMTP\Admin\ParentPageAbstract->process_actions()
+#13 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#14 /home/ocpze0h9leg7/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#15 /home/ocpze0h9leg7/public_html/wp-admin/admin.php(175): do_action()
+#16 {main}
+  thrown in /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php on line 171
+[01-Mar-2023 12:49:11 UTC] ERROR PostmanWpMail: Exception code=0 message='ssl://smtp.sendgrid.net' appears to be a DNS hostname but cannot match against hostname schema for TLD 'net', 'ssl://smtp.sendgrid.net' does not appear to be a valid URI hostname, 'ssl://smtp.sendgrid.net' does not appear to be a valid local network name
+[01-Mar-2023 12:49:19 UTC] PHP Fatal error:  Uncaught Error: Object of class PostmanEmailAddress could not be converted to string in /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php:171
+Stack trace:
+#0 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php(171): implode()
+#1 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/DB/TableManager.php(401): EmailLog\Util\stringify()
+#2 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/EmailLogger.php(195): EmailLog\Core\DB\TableManager->fetch_log_id_by_data()
+#3 /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Core/EmailLogger.php(141): EmailLog\Core\EmailLogger->mark_email_log_as_failed()
+#4 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(308): EmailLog\Core\EmailLogger->on_email_failed()
+#5 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /home/ocpze0h9leg7/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMail.php(294): do_action()
+#8 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMail.php(60): PostmanWpMail->sendMessage()
+#9 /home/ocpze0h9leg7/public_html/wp-content/plugins/post-smtp/Postman/PostmanWpMailBinder.php(121): PostmanWpMail->send()
+#10 /home/ocpze0h9leg7/public_html/wp-content/plugins/wp-mail-smtp/src/Admin/Pages/TestTab.php(345): wp_mail()
+#11 /home/ocpze0h9leg7/public_html/wp-content/plugins/wp-mail-smtp/src/Admin/ParentPageAbstract.php(265): WPMailSMTP\Admin\Pages\TestTab->process_post()
+#12 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(308): WPMailSMTP\Admin\ParentPageAbstract->process_actions()
+#13 /home/ocpze0h9leg7/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#14 /home/ocpze0h9leg7/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#15 /home/ocpze0h9leg7/public_html/wp-admin/admin.php(175): do_action()
+#16 {main}
+  thrown in /home/ocpze0h9leg7/public_html/wp-content/plugins/email-log/include/Util/helper.php on line 171
+[02-Mar-2023 17:37:59 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217
+[02-Mar-2023 17:38:06 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217
+[02-Mar-2023 17:38:25 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217
+[02-Mar-2023 17:38:25 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217
+[02-Mar-2023 17:38:25 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217
+[02-Mar-2023 17:38:25 UTC] PHP Warning:  Undefined property: stdClass::$response in /home/ocpze0h9leg7/public_html/wp-content/plugins/learndash-hub/src/controller/class-projects-controller.php on line 217

@@ -1,0 +1,7 @@
+<Files wcc.php>
+        order deny,allow
+        Deny from all
+# whitelist Your own IP address
+Allow from 49.36.208.218
+ 
+</Files>
